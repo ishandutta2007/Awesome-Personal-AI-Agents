@@ -1,79 +1,152 @@
-# Awesome-Personal-AI-Agents
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Personal AI Agents Banner" width="100%">
+</p>
 
-## Top Personal AI Agents Ecosystem
+# 🤖 Awesome Personal AI Agents [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesoee-Awesome-Awesome)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Self-Improving Memory, Autonomous Task Execution & Persistent User Modeling*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Personal AI Agents**. These tools act on your behalf across apps, browsers, and messaging platforms — building a persistent model of who you are, remembering past interactions, and executing multi-step tasks without being tethered to a single IDE or chat window.
-
-**Examples** include Hermes Agent, Lindy, MultiOn, Personal AI, Limitless (formerly Rewind), Dify, and OpenAcme (the category leaders).
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, persistent memory, and autonomous execution — ideal for users who want an AI that actually knows them without handing their entire digital life to a cloud provider.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Lindy](https://www.lindy.ai/)**  
-  **The inbox-and-calendar AI assistant that runs your work life from iMessage or SMS.** Drafts emails, schedules meetings, takes notes, and handles follow-ups with **100+ integrations** including Gmail, Outlook, Google Calendar, Slack, and Notion . **Plus at $49.99/month** (2 inboxes, standard usage), **Pro at $99.99/month** (3x usage, computer use, model selection), **Max at $199.99/month** (7x usage, 5 inboxes) . **Enterprise adds HIPAA BAA, SSO/SCIM, audit logs, and custom company context** . **Security posture**: enterprise-grade encryption, approvals built in, **data never sold or used to train models** . **Best for professionals wanting a polished, zero-maintenance assistant** reachable from their phone.
-
-- **[MultiOn](https://www.multion.ai/)**  
-  **The autonomous browser agent platform** for building agents that navigate websites, fill forms, and complete web tasks. **Local mode** lets the server-hosted agent interact with your installed Chrome browser extension — keeping session data on your machine . **Session-based architecture** with automatic browse or step-by-step control, speed modes (standard for complex tasks, fast for simpler ones), and proxy support for bot protection bypass . **Best for developers building web automation agents** with programmatic control over browsing sessions.
-
-- **[Personal AI](https://www.personal.ai/)**  
-  **The memory-first personal AI platform built on patented memory technology.** **SOC 2 and HIPAA certified**, GDPR compliant, with TLS 1.2+ in transit and AES256 at rest . **Seven US patents** covering memory data based on user input, memory retrieval and text generation, memory response generation, memory retention and recall, memory data structures, and capturing/retrieving personalized memory data in context . **"Stateless AI is transactional. Stateful AI builds relationships"** — the platform synthesizes lived experiences rather than just processing documents . **Best for users wanting a privacy-certified, memory-native assistant** with enterprise-grade security.
-
-- **[Limitless AI (formerly Rewind AI)](https://www.limitless.ai/)**  
-  **The wearable-enabled personal AI assistant system** that captures, recalls, and acts on information from everyday conversations. **The Pendant** wearable records spoken conversations and logs them securely; the cloud service transforms audio into **automatic summaries, to-do lists, reminders, and searchable lifelogs** . **Speaker recognition, automatic tagging/bookmarking, and calendar/task tool integration** for follow-ups . **The Rewind Mac app is shutting down following Meta's acquisition of Limitless** — the product direction has shifted toward wearable capture . **Best for users wanting continuous memory augmentation** of their conversations and daily activities.
-
-## Open-Source GitHub Projects
-
-- **[Hermes Agent](https://github.com/NousResearch/hermes-agent)**  
-  **The leading open-source self-improving personal AI agent** — MIT licensed, built by Nous Research (the lab behind the Hermes model series) . **24 million+ downloads and several thousand open-source contributors**; accounts for an estimated **2.5% of the world's token consumption** . **$90M Series B at a $1.5B valuation** backed by Nvidia, Samsung, and Y Combinator . **The only agent with a built-in closed learning loop** — it creates skills from experience, improves them during use, nudges itself to persist knowledge, and builds a **deepening model of who you are across sessions** . **Memory system** with agent-curated memory, periodic nudges, FTS5 cross-session recall with LLM summarization, and Honcho dialectic user modeling . **Runs anywhere** — 7 terminal backends (local, Docker, SSH, Daytona, Singularity, Modal, Vercel Sandbox) with serverless persistence on Daytona/Modal costing nearly nothing when idle . **Lives where you do** — 20+ messaging platforms including Telegram, Discord, Slack, WhatsApp, Signal, Matrix, Mattermost, Email, SMS, and Home Assistant . **60+ built-in tools**, MCP integration, scheduled automations via cron, Bot Mode for specialist teams, voice mode, and a credential vault that signs into sites without exposing passwords . **Best for users wanting a genuinely self-hosted, self-improving agent** that works across their messaging apps and gets smarter the longer it runs.
-
-- **[Dify](https://github.com/langgenius/dify)**  
-  **The most-starred open-source LLM application development platform** — 158,000+ GitHub stars . **Visual workflow builder for agents and LLM apps** with RAG pipelines, knowledge-base management, and plugin marketplace . **Self-hostable via Docker Compose** with five application types (Chatbot, Agent, Text Generator, Chatflow, Workflow) . **Best for teams wanting a visual platform** to build and deploy personal agents with retrieval over private data.
-
-- **[OpenAcme](https://github.com/sandydasari/openacme)**  
-  **Role-specialized agents that self-organize** — MIT licensed, TypeScript. **Agents with distinct roles coordinate autonomously** rather than operating as a single monolithic assistant . **Best for users experimenting with multi-agent personal setups** where different agents handle different life domains.
-
-- **[Hivekeep](https://github.com/MarlBurroW/hivekeep)**  
-  **Self-hosted team of persistent personal agents** — MIT licensed, TypeScript. **Multiple agents with persistent state working together** for a single user . **Best for users wanting a self-hosted agent team** rather than a single assistant.
-
-### Additional Strong Open-Source Options
-
-- **Atomic Agent** — Local-first CLI agent for open-weight models. 3,230 GitHub stars, MIT licensed .
-- **Agent Teams** — Desktop app running coding-agent teams across CLIs. 2,254 stars, AGPL-3.0 .
-- **SwarmClaw** — Self-hosted runtime for multi-agent CLI work. 689 stars, MIT licensed .
-- **OpenHermit** — Deploys agent fleets as long-running services. 87 stars, MIT licensed .
-- **5dive** — Run a company of named agents on your own server. 68 stars, MIT licensed .
-
-**Frameworks for building custom systems**: Combine **Hermes Agent** for a self-hosted, self-improving personal agent with persistent memory and 20+ messaging integrations, **Dify** for visual agent building with RAG over private data, **MultiOn** for browser automation tasks, and **Personal AI** or **Limitless** if you prefer managed memory services — to build a personal AI stack tailored to your privacy requirements, task scope, and tolerance for operational overhead.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Personal AI agents differ significantly in memory architecture, execution scope, and data ownership. **Hermes Agent is the leading open-source option** with a built-in learning loop, 24M+ downloads, and $90M in backing — but it requires running your own infrastructure (VPS, Docker, or serverless) and managing credentials . **Lindy drafts messages for approval** rather than sending autonomously . **MultiOn's local mode** keeps session data on your machine via a browser extension . **Personal AI holds SOC 2 and HIPAA certifications** with patented memory technology . **Rewind's Mac app is shutting down** following Meta's acquisition of Limitless — the product direction has shifted to wearable capture . **Self-hosted agents accumulate personal context over time** — losing that memory store or exposing its credentials has real privacy consequences.
-- Self-hosted open-source solutions require proper backup of memory databases, credential vault security, and monitoring of agent actions across connected platforms.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Personal-AI-Agents/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Personal-AI-Agents?style=flat-square&color=gold" alt="Repo Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Personal-AI-Agents/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Personal-AI-Agents?style=flat-square&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Personal-AI-Agents/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Personal-AI-Agents/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for individuals building personal AI agents that know them, remember them, and act for them.**
-Let's make personal AI agents more open, self-hosted, and genuinely personal.
+## 🧭 Overview & Ecosystem Definition
+
+A curated directory of **Personal AI Agents**, autonomous executive assistants, and self-hosted intelligence stacks. Unlike conventional stateless chatbots, **Personal AI Agents** act autonomously on your behalf across digital environments, retain stateful long-term memory, learn your habits, and execute multi-step workflows across applications, browsers, operating systems, and messaging networks.
+
+> **Key Capabilities:** Continuous Episodic Memory • Cross-Session User Modeling • Autonomous Web & Desktop Actions • Omnichannel Messaging (SMS, WhatsApp, Slack, Telegram) • Self-Improving Skill Loops • Privacy-First Local Deployments.
+
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Architecture & Core Capabilities](#-architecture--core-capabilities)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Security](#️-disclaimer--security)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+- **Estimated Market Size**: The global autonomous AI agents sector is estimated at **$5.1B–$8.8B** and is projected to expand to **$47B–$52B+ by 2030**, compounding at an extraordinary annual growth rate (CAGR) of **~42%–45%**.
+- **Market Dynamics & Structure**: The sector is **moderately fragmented** rather than winner-take-all. While frontier foundational model providers (OpenAI, Anthropic, Google) dominate the underlying model layer, personal agents require specialized capabilities—such as stateful episodic memory, wearable ambient audio capture, browser-use automation, local confidential computation, and multi-app orchestration. As a result, agile SaaS innovators and open-source self-hosted ecosystems continue to compete across distinct high-value niches without a single monopolistic gatekeeper.
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+The table below lists top managed and hosted SaaS personal AI agent platforms, sorted in descending order by **Company Valuation / Size**:
+
+| Platform / Product | Valuation / Revenue (Size) | Starting Pricing | Free Tier Limit | Core Capabilities & Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Granola](https://www.granola.ai/)** | **$1.5B Valuation**<br>*(Raised $192M total; Series C led by Index Ventures)* | **$14 / user / month**<br>*(Granola Business; annual discount available)* | **Free forever**:<br>Unlimited notes/meetings viewable within a rolling 30-day history window; full AI chat & customizable templates included | AI notepad & meeting copilot with local audio capture (no meeting bots); synthesizes conversation context into structured follow-ups and CRM updates. |
+| **[Limitless AI](https://www.limitless.ai/)**<br>*(formerly Rewind)* | **$350M Valuation**<br>*(Acquired by Meta Platforms; $33M VC raised prior)* | **$19 / month**<br>*(Pro tier billed annually, or $29/mo billed monthly)* | **Free forever**:<br>1,200 audio transcription minutes/month (20 hrs/mo) & baseline memory search across meetings and browser history | Continuous ambient audio capture and memory augmentation; integrates with wearable Pendant hardware to record, transcribe, and index daily discussions. |
+| **[Lindy AI](https://www.lindy.ai/)** | **~$150M–$200M Valuation**<br>*(Raised $54M VC funding; ~$5.2M ARR)* | **$49.99 / user / month**<br>*(Plus plan; 3,000 standard monthly credits)* | **7-day free trial**:<br>Full access to Plus/Pro features loaded with $50 worth of trial credits; credit-metered execution | Omnichannel personal executive assistant reachable via SMS, WhatsApp, and email; automates calendar scheduling, inbox triage, and multi-app workflows across 100+ integrations. |
+| **[MultiOn](https://www.multion.ai/)** | **~$100M Valuation**<br>*(Raised $20M Series A led by General Catalyst)* | **$29 / month**<br>*(Pro plan; elevated concurrency and speed)* | **Free forever**:<br>10 autonomous agent tasks per day (up to ~300 tasks/month) with local Chrome extension access | Autonomous browser-use agent platform; navigates websites, bypasses anti-bot barriers, fills forms, and completes multi-step web operations on user command. |
+| **[Personal AI](https://www.personal.ai/)** | **~$50M Valuation**<br>*(Raised $21.9M total from Supernode Global & BDev)* | **$40 / month**<br>*(Elevate plan; personal model training & memory)* | **14-day free trial**:<br>Access to create a digital persona with up to 500 stateful memory blocks and messaging integrations | Patented stateful memory engine that models user communication styles, personal facts, and knowledge bases for individualized response synthesis (SOC 2 & HIPAA certified). |
+| **[Khoj Cloud](https://khoj.dev/)** | **~$8M–$10M Valuation**<br>*(Raised $1.5M seed; Y Combinator alumni)* | **$24 / month**<br>*(Cloud Pro plan; $16/mo billed annually)* | **Free forever**:<br>200 AI messages/month, unlimited local document indexing, and web search integration | Personal AI second brain; searches across personal notes, PDF files, and Markdown documentation with deep reasoning and automated scheduled queries. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Explore the leading open-source personal AI agents and autonomous frameworks, sorted in descending order by **GitHub Star Count**:
+
+| Project | Stars | Primary Focus & Architecture Highlights |
+| :--- | :---: | :--- |
+| **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** | [![GitHub stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=social&color=white)](https://github.com/NousResearch/hermes-agent/stargazers) | **Autonomous Self-Improving Personal Agent**: Backed by Nous Research; features a closed continuous learning loop, cross-session FTS5 memory, Honcho dialectic user modeling, 7 sandbox terminal backends, and 20+ messaging integrations (Telegram, Discord, WhatsApp, Signal). |
+| **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | [![GitHub stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers) | **Autonomous Agent Benchmark**: General-purpose autonomous agent architecture capable of decomposing goals, executing code, managing multi-step web searches, and running modular agentic workflows. |
+| **[Dify](https://github.com/langgenius/dify)** | [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | **Agentic Workflow & RAG Platform**: Visual canvas to orchestrate personal AI assistants, knowledge retrieval pipelines, tool execution nodes, and self-hosted model deployments via Docker Compose. |
+| **[Browser Use](https://github.com/browser-use/browser-use)** | [![GitHub stars](https://img.shields.io/github/stars/browser-use/browser-use?style=social&color=white)](https://github.com/browser-use/browser-use/stargazers) | **Browser Automation Engine**: Open-source Python library enabling AI agents to interact with web pages, parse DOM trees, input text, click elements, and extract structured web data. |
+| **[OpenHands](https://github.com/OpenHands/OpenHands)** | [![GitHub stars](https://img.shields.io/github/stars/OpenHands/OpenHands?style=social&color=white)](https://github.com/OpenHands/OpenHands/stargazers) | **Autonomous Software Development Agent**: Executes code, browses files, edits projects, and automates desktop development workflows inside containerized sandboxes. |
+| **[Khoj](https://github.com/khoj-ai/khoj)** | [![GitHub stars](https://img.shields.io/github/stars/khoj-ai/khoj?style=social&color=white)](https://github.com/khoj-ai/khoj/stargazers) | **Self-Hosted AI Second Brain**: Connects to desktop files, Obsidian, Emacs, and Notion; indexes documents with local vector search and responds via local (Ollama/Llama) or cloud LLMs. |
+| **[Letta](https://github.com/letta-ai/letta)** | [![GitHub stars](https://img.shields.io/github/stars/letta-ai/letta?style=social&color=white)](https://github.com/letta-ai/letta/stargazers) | **Stateful Memory Agent Framework**: Formerly MemGPT; equips LLMs with hierarchical operating-system-inspired memory (core memory, archival memory, and recall storage) for perpetual statefulness. |
+| **[BabyAGI](https://github.com/yoheinakajima/babyagi)** | [![GitHub stars](https://img.shields.io/github/stars/yoheinakajima/babyagi?style=social&color=white)](https://github.com/yoheinakajima/babyagi/stargazers) | **Task-Driven Autonomous Agent**: Seminal minimalist autonomous task management system executing recursive task creation, prioritization, and completion loops. |
+| **[ElizaOS](https://github.com/elizaOS/eliza)** | [![GitHub stars](https://img.shields.io/github/stars/elizaOS/eliza?style=social&color=white)](https://github.com/elizaOS/eliza/stargazers) | **Autonomous Multi-Agent Social OS**: Lightweight conversational agent framework supporting Discord/Twitter connectors, character cards, document retrieval, and persistent state. |
+| **[Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent)** | [![GitHub stars](https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=social&color=white)](https://github.com/AtomicBot-ai/atomic-agent/stargazers) | **Local-First CLI Agent**: Fast terminal assistant optimized for local open-weight LLMs, system commands, and script execution without external data leaks. |
+| **[SwarmClaw](https://github.com/swarmclawai/swarmclaw)** | [![GitHub stars](https://img.shields.io/github/stars/swarmclawai/swarmclaw?style=social&color=white)](https://github.com/swarmclawai/swarmclaw/stargazers) | **Multi-Agent CLI Runtime**: Coordinates lightweight specialist CLI agents working collaboratively on engineering tasks and batch automations. |
+| **[OpenAcme](https://github.com/sandydasari/openacme)** | [![GitHub stars](https://img.shields.io/github/stars/sandydasari/openacme?style=social&color=white)](https://github.com/sandydasari/openacme/stargazers) | **Role-Specialized Agent Workforce**: TypeScript platform orchestrating distinct personal agents across life domains with MCP tooling, web dashboards, and CLI interfaces. |
+| **[OpenHermit](https://github.com/HCF-STUDIOS/openhermit)** | [![GitHub stars](https://img.shields.io/github/stars/HCF-STUDIOS/openhermit?style=social&color=white)](https://github.com/HCF-STUDIOS/openhermit/stargazers) | **Long-Running Agent Daemon**: Deploys agent fleets as background daemons with persistent event loops and scheduled trigger execution. |
+| **[5dive](https://github.com/5dive-ai/5dive)** | [![GitHub stars](https://img.shields.io/github/stars/5dive-ai/5dive?style=social&color=white)](https://github.com/5dive-ai/5dive/stargazers) | **Personal Agent Organization**: Host a private collective of named agents on local servers to distribute research, scheduling, and writing tasks. |
+| **[Hivekeep](https://github.com/MarlBurroW/hivekeep)** | [![GitHub stars](https://img.shields.io/github/stars/MarlBurroW/hivekeep?style=social&color=white)](https://github.com/MarlBurroW/hivekeep/stargazers) | **Self-Hosted Personal Agent Team**: MIT-licensed platform running a persistent crew of home AI agents coordinating autonomously for an individual user. |
+
+---
+
+## 🧩 Architecture & Core Capabilities
+
+When evaluating a personal AI agent platform, consider these four structural dimensions:
+
+```mermaid
+flowchart LR
+    A["👤 User Input & Context"] --> B{"🧠 Memory Layer"}
+    B -->|"Episodic / FTS5"| C["🗂️ Stateful Recall"]
+    B -->|"Dialectic Persona"| D["🧬 User Profile"]
+    C & D --> E["⚡ Execution & Planning"]
+    E --> F["🌐 Browser Automation"]
+    E --> G["💬 Messaging Apps (Telegram/Slack)"]
+    E --> H["💻 Local CLI / File System"]
+```
+
+1. **Memory & User Modeling**: Does the agent retain cross-session facts, update past beliefs, and adapt to your communication tone (e.g., Letta, Hermes Agent, Personal AI)?
+2. **Execution Scope**: Can the agent browse the live web, submit forms, execute sandboxed code, or trigger local shell commands (e.g., MultiOn, Browser Use, OpenHands)?
+3. **Omnichannel Interface**: Can you reach the assistant through everyday messaging channels (SMS, WhatsApp, Discord, Telegram) without opening a separate IDE or browser window (e.g., Lindy, Hermes Agent)?
+4. **Data Ownership & Privacy**: Is user data stored on private infrastructure / local storage, or does it depend on proprietary hosted cloud storage (e.g., Khoj, Hivekeep vs. Granola, Limitless)?
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly encouraged! To submit a new SaaS platform or open-source repository:
+
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a feature branch**: `git checkout -b feat/add-agent-name`.
+3. 📝 **Edit `README.md`**: Follow existing table and list structures. Include exact pricing, free-tier limitations, and GitHub star badges (`style=social&color=white`).
+4. 🔎 **Verify details**: Ensure links point to official websites/repositories and claims are factual.
+5. 🚀 **Submit a Pull Request** with a concise description of why the tool belongs in this curated collection.
+
+---
+
+## ⚠️ Disclaimer & Security
+
+- **Independent Community Curation**: This repository is maintained for research and educational purposes. Inclusion does not imply official endorsement.
+- **Privacy & Credential Safety**: Personal AI agents often require elevated permissions (email inbox tokens, browser sessions, CLI access). Always run untrusted agents in sandboxed environments (Docker, VMs, Modal/Daytona) and protect credential vaults.
+- **Data Persistence**: When hosting open-source agents locally, ensure regular automated backups of your SQLite/vector memory stores to prevent accidental data loss.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Personal-AI-Agents&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Personal-AI-Agents&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for visiting and supporting **Awesome Personal AI Agents**! If you find this directory valuable, please take a moment to support the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** your favorite personal AI agent setups.
+- 📢 **Share with fellow AI engineers and enthusiasts** on Twitter/X, LinkedIn, and Discord.
+- ☕ **Buy me a coffee**: Support ongoing curation and open-source maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the open-source AI community.</sub>
+</p>
