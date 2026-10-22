@@ -1,6 +1,6 @@
 # Awesome-Personal-AI-Agents
 
-# Top Personal AI Agents Ecosystem
+## Top Personal AI Agents Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Self-Improving Memory, Autonomous Task Execution & Persistent User Modeling*  
